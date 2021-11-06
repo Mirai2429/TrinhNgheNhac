@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChonNhac">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Bài số"
+        android:textSize="40dp"/>
+
+    <TextView
+        android:id="@+id/SoBai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="SoBai"
+        android:textSize="20dp"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/Bai1"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:backgroundTint="@color/white"
+            tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/Bai2"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:text="2"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:backgroundTint="@color/white"
+            app:layout_constraintLeft_toRightOf="@+id/Bai1"
+            tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/Bai3"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:text="3"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:backgroundTint="@color/white"
+            app:layout_constraintLeft_toRightOf="@+id/Bai2"
+            tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/Bai4"
+            android:layout_width="210dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:text="4"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:backgroundTint="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/Bai2"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="0dp"
+            tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/Bai5"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:text="5"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:backgroundTint="@color/white"
+            app:layout_constraintLeft_toRightOf="@+id/Bai4"
+            app:layout_constraintTop_toBottomOf="@id/Bai3"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/Bai6"
+            android:layout_width="210dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@color/white"
+            android:text="6"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/Bai5"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="152dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/Chon"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        android:text="Chọn"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+</LinearLayout>
